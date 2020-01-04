@@ -73,7 +73,7 @@ export const menuButtonObservers = (config, header) => {
   };
 
   if (!window.customHeaderMenuObserver) {
-    +window.customHeaderMenuObserver = true;
+    window.customHeaderMenuObserver = true;
     const notificationObserver = new MutationObserver(notificationDot);
     notificationObserver.observe(haElem.menu.shadowRoot, { childList: true });
 
